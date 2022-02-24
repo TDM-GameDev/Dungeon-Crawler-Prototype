@@ -9,7 +9,9 @@ namespace DungeonCrawler.Generation
     public enum RoomTypes
     {
         Hallway,
-        Corner,
+        Intersection,
+        RightTurn,
+        LeftTurn,
         Room,
         LargeChamber,
         MediumChamber,

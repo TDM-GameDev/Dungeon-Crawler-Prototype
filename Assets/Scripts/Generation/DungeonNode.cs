@@ -6,7 +6,12 @@ namespace DungeonCrawler.Generation
 {
     public class DungeonNode : MonoBehaviour
     {
-        [SerializeField] public RoomTypes roomType;
-        [SerializeField] public bool isLockedIn = false;
+        [SerializeField] RoomTypes roomType;
+        [SerializeField] bool isLockedIn = false;
+        [SerializeField] float rotationAngle = 0f;
+
+        public RoomTypes RoomType => roomType;
+        public bool IsLockedIn => isLockedIn;
+        public float RotationAngle => rotationAngle;
     }
 }
